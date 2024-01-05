@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800;900&family=Roboto&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  color: var(--white-color);
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  
+  width: 100%;
+}
+:root {
+  --white-color: #ffff;
+  --btn-color: #e50914;
+}
+
+h1,
+h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  margin-top: 30px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+/* -----------------------------
+         start css of header
+ ----------------------------*/
+
+header {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("images/bg_image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  max-width: 80vw;
+  padding: 1rem 3rem;
+}
+
+.logo img {
+  width: 9.25rem;
+  height: 4.5rem;
+}
+.blk-btn {
+  background-color: #00000083;
+  font-size: 1rem;
+  height: 2rem;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.406);
+  margin-left: 5px;
+  color: white;
+}
+.blk-btn i {
+  margin: 5px;
+  font-size: 14px;
+}
+.sign {
+  background-color: var(--btn-color);
+  height: 2rem;
+  padding: 0rem 1rem;
+  color: var(--white-color);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 5px;
+  border: none;
+  margin-left: 5px;
+}
+.sign:hover {
+  background-color: #c11119;
+}
+.red-btn:hover {
+  background-color: #c11119;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+   position: relative;
+   top: 22%;
+  margin: auto;
+}
+form {
+  width: 100%;
+  text-align: center;
+}
+input {
+  margin: 10px 0 0 0;
+  padding: 10px;
+  height: 50px;
+  width: 38%;
+  background-color: #000000a0;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.red-btn {
+  background-color: var(--btn-color);
+  padding: 5px 25px;
+  height: 50px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 5px;
+  border: none;
+}
+/* -----------------------------
+      end css of header
+ ----------------------------*/
+
+section {
+  padding: 70px;
+  background-color: black;
+  border-top: 8px solid #232323;
+}
+.row ,
+.row-2{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.col-1 {
+  flex-basis: 50%;
+}
+.col-2 {
+  flex-basis: 40%;
+}
+/* -----------------------------
+         css of accordion
+ ----------------------------*/
+.accordion {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+  height:5rem;
+  color: white;
+  background-color: rgb(45, 45, 45);
+  font-size: 1rem;
+  font-weight: 300;
+}
+.accordion-title:hover {
+  transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+  background-color: rgb(65, 65, 65);
+}
+.accordion button {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+}
+.hide {
+  display: none;
+}
+.anwser {
+  color: white;
+  font-size: 1.125rem;
+  line-height: 30px;
+  padding: 20px;
+  border-top: 1px solid black;
+  margin-bottom: 10px;
+  background-color: rgb(45, 45, 45);
+  display: none;
+}
+.active .anwser {
+  display: block;
+}
+
+/* start css for footer */
+footer {
+  background-color: black;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  border-top: 8px solid #232323;
+  padding: 3.125rem 0  4.375rem 0;
+  text-align: start;
+  width: 100vw;
+}
+.top-text {
+  left: 13%;
+  position: relative;
+  margin-bottom: 8px;
+}
+.box{
+  padding: 0 2rem;
+}
+.bottom-text {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  margin-bottom: 12px;
+  padding: 0 1rem;
+}
+.bottom-text ul li {
+  list-style: none;
+}
+
+.bottom-text ul li a {
+  line-height: 2.5rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+.bottom-text ul li a:hover {
+  text-decoration: none;
+}
+

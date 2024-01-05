@@ -1,0 +1,136 @@
+@media only screen and (max-width: 1024px) {
+  header {
+    height: 100vh;
+  }
+  nav {
+    max-width: 100vw;
+    padding: 1rem 1rem;
+  }
+  .logo img {
+    width: 7rem;
+    height: 2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+  }
+  .accordion {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
+  .bottom-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 12px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  header {
+    height: 80vh;
+  }
+  .logo img {
+    width: 5rem;
+    height: 1rem;
+  }
+
+  section {
+    padding: 3.5rem 1rem;
+    background-color: black;
+    border-top: 8px solid #232323;
+  }
+  .row {
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .col-1 {
+    flex-basis: 90%;
+  }
+  .col-2 {
+    flex-basis: 90%;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+
+  .col-2 img {
+    width: 90%;
+  }
+  .col-2 video {
+    width: 90%;
+  }
+
+  .row-2 {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .accordion-title {
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+  .bottom-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /*  header start */
+
+  header {
+    height: 80vh;
+  }
+
+  .container {
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 10%;
+    margin: auto;
+    padding: 0rem 1rem;
+  }
+  .container h3 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 0%;
+    margin-bottom: 0.5rem;
+  }
+  .container p {
+    margin: 1rem 0 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  input {
+    width: 80%;
+    margin-bottom: 1.2rem;
+    background-color: #00000073;
+    border: 1px solid grey;
+  }
+  .col-2 video {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /*   header  mobile view  */
+
+  .container h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+}
